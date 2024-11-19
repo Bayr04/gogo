@@ -1,0 +1,238 @@
+body {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    width: 1180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 50px;
+    align-items: center;
+}
+
+.arrow{
+    rotate: 90deg;
+}
+
+.header-text{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.gogo-logo{
+    width: 119px;
+    height: 39px;
+}
+
+.relative{
+    position: relative;
+}
+
+.nav-text{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-text{
+    font-size: 12px;
+}
+
+.icon-container{
+    display: flex;
+    gap: 40px;
+    margin-left: 200px;
+}
+
+.each-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dollar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.news-hidden{
+    display: none;
+    position: absolute;
+    width: 466px;
+    height: 305px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+    line-height: 3rem;
+}
+
+.header-text:hover + .news-hidden{
+    display: flex;
+}
+
+/* main */
+
+  #main {
+    width: 1180px;
+    height: 100vh;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main-section {
+    width: 1180px;
+
+    display: flex;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+#intro-section {
+    height: 385px;
+    border-radius: 10px;
+    background-color:#f4f4f4;
+    padding-left: 10px;
+}
+
+#intro-image {
+    height: 385px;
+    width: 575px;
+    padding-left: 80px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.main-img {
+    width: 575px;
+    height: 385px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.image-text{
+width: 100%;
+height: 100%;
+margin: 0;
+position: absolute;
+top: 0;
+left: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+opacity: 0;
+pointer-events: none;
+}
+.black-screen{
+    background-color: black;
+    height: 100%;
+    width: 575px;
+    position: absolute;
+    top: 0;
+    left: 80px;
+    opacity: 0;
+    pointer-events: none;
+}
+#intro-image:hover .black-screen{
+    opacity: 0.4;
+    transition: 0.3s;
+}
+#intro-image:hover .image-text{
+    opacity: 1;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.text {
+    width: 75.87px;
+    height: 25px;
+    font-weight: bold;
+    color: #f4f4f4;
+    background-color: #e64905;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.main-text {
+    width: 515px;
+    font-weight: bold; 
+    padding-top: 40px
+}
+
+#main-section {
+    width:1180px;
+    height: 283px;
+    display: flex;
+    border-radius: 10px;
+    object-fit: cover;
+    padding-top: 30px;
+    gap: 40px;
+    position: relative;
+    background-color: #f4f4f4;
+}
+
+.section-image {
+    width: 263px;
+    height: 175px;
+    display: flex;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.image {
+    pointer-events: none;
+}
+
+.section-image-text {
+    width: 77px;
+    height: 23px;
+    margin: 0;
+    padding-top: 70px;
+    padding-left: 100px;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 1;
+}
+
+.section-image-screen {
+    background-color: black;
+    width: 263px;
+    height: 175px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 80px;
+    opacity: 0;
+    pointer-events: none;
+}
+.section-image:hover .section-image-text {
+    opacity: 1;
+    z-index: 2;
+    transition: 0.3s;
+}
+.img {
+    width: 263px;
+    height: 282px;
+    border-radius: 10px;
+    pointer-events: none;
+}
