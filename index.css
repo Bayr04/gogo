@@ -126,18 +126,18 @@ body {
 }
 
 .image-text{
-width: 100%;
-height: 100%;
-margin: 0;
-position: absolute;
-top: 0;
-left: 30px;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-opacity: 0;
-pointer-events: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
 }
 .black-screen{
     background-color: black;
@@ -153,6 +153,7 @@ pointer-events: none;
     opacity: 0.4;
     transition: 0.3s;
 }
+
 #intro-image:hover .image-text{
     opacity: 1;
     z-index: 2;
@@ -180,23 +181,24 @@ pointer-events: none;
     width:1180px;
     height: 283px;
     display: flex;
+    justify-content: space-between;
     border-radius: 10px;
     object-fit: cover;
     padding-top: 30px;
-    gap: 40px;
     position: relative;
     background-color: #f4f4f4;
 }
 
 .section-image {
-    width: 263px;
     height: 175px;
     display: flex;
-    border-radius: 10px;
-    pointer-events: none;
+    position: relative;
 }
 
 .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
     pointer-events: none;
 }
 
@@ -206,25 +208,31 @@ pointer-events: none;
     margin: 0;
     padding-top: 70px;
     padding-left: 100px;
+    font-weight: bold;
     position:absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    opacity: 1;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .section-image-screen {
     background-color: black;
-    width: 263px;
+    width: 282px;
     height: 175px;
-    display: flex;
     position: absolute;
     top: 0;
-    left: 80px;
     opacity: 0;
     pointer-events: none;
 }
+
+.section-image:hover .section-image-screen{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 .section-image:hover .section-image-text {
     opacity: 1;
     z-index: 2;
@@ -233,6 +241,10 @@ pointer-events: none;
 .img {
     width: 263px;
     height: 282px;
-    border-radius: 10px;
-    pointer-events: none;
+}
+
+.section-text {
+    width: 263px; ;
+    height: 65px;
+    
 }
