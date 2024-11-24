@@ -87,7 +87,6 @@ body {
 /* main */
 
   #main {
-    width: 1180px;
     border-radius: 10px;
     border: 1px solid wheat;
     display: flex;
@@ -290,5 +289,17 @@ body {
 .story-image {
     width: 170px;
     height: 100%;
+    border-radius: 5px;
     object-fit: cover;
+}
+
+.story-hidden {
+    width: 150px;
+    height: 37px;
+    overflow: hidden;
+}
+
+.hidden-text{
+    width: 100%;
+    height: 100%;
 }
