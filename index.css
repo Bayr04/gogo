@@ -123,6 +123,7 @@ body {
     padding-left: 50px;
     border-radius: 10px;
     position: relative;
+    overflow: hidden;
 }
 
 .main-img {
@@ -149,7 +150,7 @@ body {
 .black-screen{
     background-color: black;
     height: 100%;
-    width: 575px;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 50px;
@@ -201,6 +202,7 @@ body {
     height: 175px;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 
 .image {
@@ -234,6 +236,11 @@ body {
     top: 0;
     opacity: 0;
     pointer-events: none;
+}
+
+.section-image:hover .image {
+    transform: scale(1.1, 1.1);
+    transition:0.3s ;
 }
 
 .section-image:hover .section-image-screen{
@@ -361,6 +368,7 @@ body {
     height: 150px;
     position: relative;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .list-text {
@@ -444,7 +452,7 @@ h4{
 
 #list-text {
     height: 40px;
-    background: white;
+    background: #f8f8f8;
     border: 1px solid #f2f2f2;
     display: block;
     text-align: center;
@@ -466,6 +474,7 @@ h4{
     position: relative;
     margin-top: 50px;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .section-news-image {
@@ -547,4 +556,209 @@ h4{
     font-size: 46px;
     line-height: 46px;
     padding-top: 13px;
+}
+/*  */
+#main-container {
+    width: 100%;
+    height: 500px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-container-img {
+    width: 542px;
+    height: 500px;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#main-container-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#main-container-img:hover #main-container-image{
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
+}
+/*  */
+.main-container {
+    width: 278px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-container-news {
+    position: relative;
+    width: 278px;
+    height: 243px;
+    border-radius: 5px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.main-container-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.main-container-hidden {
+    width: 223px;
+    height: 50px;
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    max-height: 37px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main-container-hidden-text {
+    width: 100%;
+    height: 100%;
+}
+
+.main-container-news:hover .main-container-image{
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
+}
+
+.main-container-news:hover .main-container-hidden{
+    top:160px;
+    overflow:visible;
+}
+
+.main-container-news:hover.main-container-hidden-text {
+    opacity: 1;
+    z-index: 2;
+    transition: 0.3s;
+}
+/*  */
+.gogo-section-style {
+    width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    object-fit: cover;
+    position: relative;
+}
+
+.gogo-style-container{
+    width: 263px;
+    height: 320px;
+    border: 1px solid #f1f1f1;
+    background-color: #fff;
+    position: relative;
+}
+
+.gogo-style{
+    width: 263px;
+    height: 230px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.gogo-style-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.style-image-text {
+    position: absolute;
+    top: 35px;
+    left: 45px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:white;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gogo-style:hover .style-image-text {
+    opacity: 1;
+    z-index: 2;
+    transition: 0.3s;
+}
+.style-image-screen{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gogo-style:hover .style-image-screen{
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.gogo-style:hover .gogo-style-image{
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
+}
+/* gogo Комик */
+
+.section-book {
+    height: 328px;
+}
+
+.book {
+    width: 550px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+}
+
+.book-image {
+    width: 550px;
+    height: 200px;
+    border-radius: 3px;
+}
+
+.book-image-text {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    padding: 70px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.book:hover.book-image-text {
+    opacity: 1;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.book-image-screen{
+    background-color: black;
+    height: 200px;
+    width: 550px;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    pointer-events: none;
 }
