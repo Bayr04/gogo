@@ -662,9 +662,9 @@ h4{
 }
 
 .gogo-style{
+    display: flex;
     width: 263px;
     height: 230px;
-    display: flex;
     position: relative;
     overflow: hidden;
 }
@@ -717,13 +717,16 @@ h4{
 
 .section-book {
     height: 328px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.book {
+.gogo-book {
     width: 550px;
     height: 200px;
     object-fit: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .book-image {
@@ -747,7 +750,7 @@ h4{
     pointer-events: none;
 }
 
-.book:hover.book-image-text {
+.gogo-book:hover .book-image-text {
     opacity: 1;
     z-index: 2;
     transition: 0.3s;
@@ -761,4 +764,15 @@ h4{
     top: 0px;
     opacity: 0;
     pointer-events: none;
+    border-radius: 3px;
+}
+
+.gogo-book:hover .book-image-screen{
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.gogo-book:hover .book-image{
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
 }
