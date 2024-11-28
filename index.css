@@ -87,7 +87,6 @@ body {
 
   #main {
     border-radius: 10px;
-    border: 1px solid wheat;
     display: flex;
     flex-direction: column;
 }
@@ -645,12 +644,13 @@ h4{
 }
 /*  */
 .gogo-section-style {
-    width: 1180px;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
     object-fit: cover;
     position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .gogo-style-container{
@@ -775,4 +775,36 @@ h4{
 .gogo-book:hover .book-image{
     transform: scale(1.1, 1.1);
     transition: 0.3s;
+}
+/* finishid main */
+ 
+.gogo-footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gogo-footer-text {
+    width: 800px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.footer-text {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #101010;
+    font-size: 15px;
+    gap: 8px;
+}
+
+.footer-text-image {
+    width: 15px;
+    height: 20px;
 }
